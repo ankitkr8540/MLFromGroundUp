@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">K-Means Clustering Algorithm</text>
+  
+  <!-- Main feature space -->
+  <rect x="50" y="80" width="700" height="450" fill="#f9f9f9" rx="5" ry="5" stroke="#dddddd" stroke-width="1" />
+  
+  <!-- Coordinate axes -->
+  <line x1="100" y1="480" x2="650" y2="480" stroke="#888" stroke-width="2" />
+  <line x1="100" y1="480" x2="100" y2="130" stroke="#888" stroke-width="2" />
+  <text x="375" y="510" font-family="Arial" font-size="16" text-anchor="middle">Feature 1</text>
+  <text x="70" y="305" font-family="Arial" font-size="16" text-anchor="middle" transform="rotate(-90 70 305)">Feature 2</text>
+  
+  <!-- Algorithm Steps -->
+  <rect x="120" y="520" width="560" height="60" fill="white" stroke="#dddddd" stroke-width="1" rx="5" ry="5" />
+  <text x="400" y="545" font-family="Arial" font-size="14" text-anchor="middle">1. Initialize Centroids → 2. Assign Data Points → 3. Update Centroids → 4. Repeat Until Convergence</text>
+  <text x="400" y="570" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic">SSE = Σ||x-c||²</text>
+  
+  <!-- Data points - Cluster 1 (Blue) -->
+  <circle cx="180" cy="250" r="6" fill="#4285f4" />
+  <circle cx="210" cy="220" r="6" fill="#4285f4" />
+  <circle cx="150" cy="280" r="6" fill="#4285f4" />
+  <circle cx="190" cy="300" r="6" fill="#4285f4" />
+  <circle cx="170" cy="260" r="6" fill="#4285f4" />
+  <circle cx="220" cy="230" r="6" fill="#4285f4" />
+  <circle cx="200" cy="270" r="6" fill="#4285f4" />
+  <circle cx="160" cy="290" r="6" fill="#4285f4" />
+  <circle cx="230" cy="240" r="6" fill="#4285f4" />
+  <circle cx="175" cy="310" r="6" fill="#4285f4" />
+  <circle cx="205" cy="255" r="6" fill="#4285f4" />
+  <circle cx="240" cy="275" r="6" fill="#4285f4" />
+  
+  <!-- Data points - Cluster 2 (Red) -->
+  <circle cx="400" cy="200" r="6" fill="#ea4335" />
+  <circle cx="430" cy="170" r="6" fill="#ea4335" />
+  <circle cx="380" cy="230" r="6" fill="#ea4335" />
+  <circle cx="410" cy="250" r="6" fill="#ea4335" />
+  <circle cx="390" cy="210" r="6" fill="#ea4335" />
+  <circle cx="440" cy="190" r="6" fill="#ea4335" />
+  <circle cx="420" cy="220" r="6" fill="#ea4335" />
+  <circle cx="370" cy="240" r="6" fill="#ea4335" />
+  <circle cx="450" cy="180" r="6" fill="#ea4335" />
+  <circle cx="395" cy="260" r="6" fill="#ea4335" />
+  <circle cx="425" cy="205" r="6" fill="#ea4335" />
+  <circle cx="460" cy="225" r="6" fill="#ea4335" />
+  
+  <!-- Data points - Cluster 3 (Yellow) -->
+  <circle cx="550" cy="350" r="6" fill="#fbbc05" />
+  <circle cx="580" cy="320" r="6" fill="#fbbc05" />
+  <circle cx="530" cy="380" r="6" fill="#fbbc05" />
+  <circle cx="560" cy="400" r="6" fill="#fbbc05" />
+  <circle cx="540" cy="360" r="6" fill="#fbbc05" />
+  <circle cx="590" cy="330" r="6" fill="#fbbc05" />
+  <circle cx="570" cy="370" r="6" fill="#fbbc05" />
+  <circle cx="520" cy="390" r="6" fill="#fbbc05" />
+  <circle cx="600" cy="340" r="6" fill="#fbbc05" />
+  <circle cx="545" cy="410" r="6" fill="#fbbc05" />
+  <circle cx="575" cy="355" r="6" fill="#fbbc05" />
+  <circle cx="610" cy="375" r="6" fill="#fbbc05" />
+  
+  <!-- Centroids -->
+  <circle cx="190" cy="270" r="12" fill="#4285f4" stroke="black" stroke-width="2" />
+  <circle cx="410" cy="210" r="12" fill="#ea4335" stroke="black" stroke-width="2" />
+  <circle cx="560" cy="360" r="12" fill="#fbbc05" stroke="black" stroke-width="2" />
+  
+  <!-- Cluster boundaries -->
+  <path d="M300,150 L300,440 L450,440 L450,150 Z" fill="none" stroke="#4285f4" stroke-width="2" stroke-dasharray="8,4" />
+  <path d="M300,150 L300,440 L150,440 L150,150 Z" fill="none" stroke="#ea4335" stroke-width="2" stroke-dasharray="8,4" />
+  <path d="M450,150 L450,440 L650,440 L650,150 Z" fill="none" stroke="#fbbc05" stroke-width="2" stroke-dasharray="8,4" />
+  
+  <!-- Decision boundaries -->
+  <line x1="300" y1="150" x2="300" y2="440" stroke="#000" stroke-width="1.5" />
+  <line x1="450" y1="150" x2="450" y2="440" stroke="#000" stroke-width="1.5" />
+  
+  <!-- Legend -->
+  <rect x="650" y="130" width="120" height="120" fill="white" stroke="#dddddd" stroke-width="1" rx="5" ry="5" />
+  <text x="710" y="150" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Legend</text>
+  
+  <!-- Legend items -->
+  <circle cx="670" cy="170" r="6" fill="#4285f4" />
+  <text x="725" y="174" font-family="Arial" font-size="12" text-anchor="middle">Cluster 1</text>
+  
+  <circle cx="670" cy="195" r="6" fill="#ea4335" />
+  <text x="725" y="199" font-family="Arial" font-size="12" text-anchor="middle">Cluster 2</text>
+  
+  <circle cx="670" cy="220" r="6" fill="#fbbc05" />
+  <text x="725" y="224" font-family="Arial" font-size="12" text-anchor="middle">Cluster 3</text>
+  
+  <circle cx="670" cy="245" r="10" fill="#4285f4" stroke="black" stroke-width="2" />
+  <text x="725" y="249" font-family="Arial" font-size="12" text-anchor="middle">Centroid</text>
+</svg>
