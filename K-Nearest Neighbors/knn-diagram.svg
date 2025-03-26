@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <!-- Background and axes -->
+  <rect width="600" height="400" fill="#f8f9fa" />
+  <line x1="100" y1="350" x2="500" y2="350" stroke="#333" stroke-width="2" />
+  <line x1="100" y1="50" x2="100" y2="350" stroke="#333" stroke-width="2" />
+  
+  <!-- Feature 1 label -->
+  <text x="300" y="380" font-family="Arial" font-size="14" text-anchor="middle">Feature 1</text>
+  
+  <!-- Feature 2 label -->
+  <text x="60" y="200" font-family="Arial" font-size="14" text-anchor="middle" transform="rotate(-90,60,200)">Feature 2</text>
+  
+  <!-- Class A points (circles) -->
+  <circle cx="200" cy="150" r="8" fill="#4285f4" />
+  <circle cx="180" cy="200" r="8" fill="#4285f4" />
+  <circle cx="250" cy="170" r="8" fill="#4285f4" />
+  <circle cx="270" cy="240" r="8" fill="#4285f4" />
+  <circle cx="230" cy="120" r="8" fill="#4285f4" />
+  <circle cx="300" cy="190" r="8" fill="#4285f4" />
+  <circle cx="350" cy="160" r="8" fill="#4285f4" />
+  
+  <!-- Class B points (triangles) -->
+  <polygon points="380,280 390,300 370,300" fill="#db4437" />
+  <polygon points="320,310 330,330 310,330" fill="#db4437" />
+  <polygon points="420,260 430,280 410,280" fill="#db4437" />
+  <polygon points="350,290 360,310 340,310" fill="#db4437" />
+  <polygon points="400,320 410,340 390,340" fill="#db4437" />
+  <polygon points="450,300 460,320 440,320" fill="#db4437" />
+  <polygon points="420,330 430,350 410,350" fill="#db4437" />
+  
+  <!-- Test point (larger, with question mark) -->
+  <circle cx="300" cy="250" r="12" fill="#f4b400" stroke="#333" stroke-width="2" />
+  <text x="300" y="255" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">?</text>
+  
+  <!-- K=5 nearest neighbors with dotted lines -->
+  <line x1="300" y1="250" x2="270" y2="240" stroke="#000" stroke-width="1" stroke-dasharray="4" />
+  <line x1="300" y1="250" x2="300" y2="190" stroke="#000" stroke-width="1" stroke-dasharray="4" />
+  <line x1="300" y1="250" x2="320" y2="310" stroke="#000" stroke-width="1" stroke-dasharray="4" />
+  <line x1="300" y1="250" x2="350" y2="290" stroke="#000" stroke-width="1" stroke-dasharray="4" />
+  <line x1="300" y1="250" x2="350" y2="160" stroke="#000" stroke-width="1" stroke-dasharray="4" />
+  
+  <!-- Circles around the 5 nearest neighbors -->
+  <circle cx="270" cy="240" r="12" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="3" />
+  <circle cx="300" cy="190" r="12" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="3" />
+  <circle cx="320" cy="310" r="16" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="3" />
+  <circle cx="350" cy="290" r="16" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="3" />
+  <circle cx="350" cy="160" r="16" fill="none" stroke="#000" stroke-width="1.5" stroke-dasharray="3" />
+  
+  <!-- Decision boundary (curved dashed line) -->
+  <path d="M150,180 Q220,220 250,270 Q290,330 370,250 Q430,200 480,220" stroke="#0F9D58" stroke-width="2" stroke-dasharray="8" fill="none" />
+  
+  <!-- Legend -->
+  <rect x="450" y="50" width="130" height="110" fill="#f8f9fa" stroke="#333" stroke-width="1" />
+  <circle cx="470" cy="75" r="8" fill="#4285f4" />
+  <text x="485" y="80" font-family="Arial" font-size="12">Class A</text>
+  <polygon points="470,105 480,125 460,125" fill="#db4437" />
+  <text x="485" y="120" font-family="Arial" font-size="12">Class B</text>
+  <circle cx="470" cy="145" r="8" fill="#f4b400" />
+  <text x="485" y="150" font-family="Arial" font-size="12">Test Point</text>
+  
+  <!-- Mathematical notation -->
+  <text x="150" y="80" font-family="Arial" font-size="14" font-style="italic">w ∝ 1/d²</text>
+  <text x="450" y="375" font-family="Arial" font-size="13">Distance-weighted voting</text>
+</svg>
