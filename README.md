@@ -26,7 +26,7 @@ A non-parametric classification algorithm that makes predictions based on the ma
 - Weighted voting mechanism
 - Cross-validation accuracy metrics
 
-[View KNN implementation →](./K-Nearest Neighbors/)
+[View KNN implementation →](./KNN/)
 
 ### K-Means Clustering
 
