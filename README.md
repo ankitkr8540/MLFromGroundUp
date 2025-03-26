@@ -26,7 +26,7 @@ A non-parametric classification algorithm that makes predictions based on the ma
 - Weighted voting mechanism
 - Cross-validation accuracy metrics
 
-[View KNN implementation →](./knn-classifier/)
+[View KNN implementation →](./K-Nearest Neighbors/)
 
 ### K-Means Clustering
 
@@ -46,7 +46,7 @@ An unsupervised learning algorithm that partitions data into K distinct clusters
 - Assignment and update steps
 - Convergence criteria and SSE objective function
 
-[View K-Means implementation →](./kmeans-clustering/)
+[View K-Means implementation →](./kmeans/)
 
 ## Project Structure
 
